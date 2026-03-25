@@ -1,0 +1,4 @@
+northern-sea-route/
+├── index.html          # главный файл
+├── style.css           # стили
+└── script.js           # логика карты

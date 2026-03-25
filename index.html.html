@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>Северный морской путь · Интерактивная карта портов</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>🧊 Северный морской путь</h1>
+        <span>10 ключевых портов</span>
+    </div>
+    <div class="main-layout">
+        <div class="map-container">
+            <div id="map"></div>
+            <div class="map-overlay">👆 коснись порта или выбери в списке</div>
+        </div>
+        <div class="right-panel">
+            <div class="port-card" id="portCard">
+                <h2 id="portName">Мурманск</h2>
+                <div class="coords" id="portCoords">68.975° с.ш., 33.075° в.д.</div>
+                <img id="portImage" class="port-image" src="" alt="порт">
+                <div class="section-title">📌 Характеристика порта</div>
+                <div class="religion-desc" id="portDesc"></div>
+                <div class="section-title">❄️ Особенности навигации</div>
+                <div class="economy-desc" id="portFeatures"></div>
+            </div>
+            <div class="ports-list-panel">
+                <h3>🗂️ Порты СМП (нажми для выбора)</h3>
+                <div class="ports-grid" id="portsList"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-note">
+        📱 Карта адаптирована для телефонов • масштабируй жестами, порты кликабельны
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
